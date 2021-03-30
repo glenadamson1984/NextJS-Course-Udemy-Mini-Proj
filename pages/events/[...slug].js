@@ -4,6 +4,8 @@ import { getFilteredEvents } from "../../helpers/api-util";
 import EventList from "../../components/events/EventList";
 
 const FilteredEventsPage = ({events}) => {
+//if we did the data fetching on the client side we could use the SWR hook
+
   return <div><EventList items={events} /></div>;
 };
 
