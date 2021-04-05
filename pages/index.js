@@ -5,6 +5,10 @@ import { getFeaturedEvents } from "../helpers/api-util";
 const Home = ({featuredEvents}) => {
   return (
     <div>
+    <Head>
+      <title>NextJS events</title>
+      <meta name="description" content="can add anything we want to the special head and do it on every page if you wanted - i skipped adding it everywhere but it is recommended" />
+    </Head>
       <EventList items={featuredEvents} />
     </div>
   );
