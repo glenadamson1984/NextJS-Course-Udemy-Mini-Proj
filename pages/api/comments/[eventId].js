@@ -1,4 +1,6 @@
 import { MongoClient } from "mongodb";
+// in production we would add error handling but for this demo i just didnt bother
+
 
 const handler = async (req, res) => {
   const eventId = req.query.eventId;
